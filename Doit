@@ -1,0 +1,5 @@
+rm ./LightSwitch.exe
+app mcs -r:System.Windows.Forms.dll \
+-r:System.Drawing.dll \
+LightSwitch.cs Items.cs
+app mono LightSwitch.exe

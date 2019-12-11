@@ -1,0 +1,33 @@
+Rohit Gangurde
+CS 354
+12/10/2019
+LA5
+
+This assignment asked us to convert a java application to C# application.
+I did this using Microsoft Visual Studio. Using visual studio made this porting 
+process a bit simpler. I quickly realise the important parts of my gui application.
+LightSwitch.cs -- This is the class which calls the Items.cs class's 
+		  InitializeComponent method which assembles everything together.
+Items.cs -- This class puts all the components together. This class has the 
+	    eventhandler function which makes the label change when the button 
+	    is clicked.
+Program.cs -- This is the class which contains the Main method. This is the main entry
+	      main entry point into the application.
+
+The LightSwitch.java class builds up the frame and adds the buttons to the Panel. The
+LightSwitch.cs class just calls the InitializeComponent method from its constructor 
+which puts everything together. The LightSwitch.java class is the driver program. The 
+driver program for the C# implementation is also the LightSwitch.cs class.
+The Items.cs class has all the different components. The Initialize component method 
+initializes button, label and the form. It also adds an EventHandler, button1_Click()
+to the button. button1_CLick() increases the count every time and changes the button 
+text and the label text when the button is clicked. If the count is even, the button 
+says off, if odd it says on.
+
+C# is somewhat similar to Java. It implements oop. C# is a difficult language. Without 
+the help from Visual Studio it would have been even more difficult to port the Java code 
+to C#.
+
+To run the program, type "Doit" on the command line. If the program does not run, do:
+$ chmod +x Doit
+$ Doit
